@@ -9,7 +9,7 @@ function App() {
       <GlobalStyle />
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path="/tweets-page" element={<TweetsPage />} />
+        <Route path="/tweets" element={<TweetsPage />} />
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
     </>
