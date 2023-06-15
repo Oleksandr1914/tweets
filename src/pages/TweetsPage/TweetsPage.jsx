@@ -38,7 +38,7 @@ const TweetsPage = () => {
     if (dropdown === "follow") {
       const newArray = users.filter((user) => user.follow === "inactive");
       dispatch(filteredUsers(newArray));
-    } else if (dropdown === "following") {
+    } else if (dropdown === "followings") {
       const newArray = users.filter((user) => user.follow === "active");
       dispatch(filteredUsers(newArray));
     }
