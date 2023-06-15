@@ -6,7 +6,7 @@ const HomePage = () => {
     <ContainerHome>
       <NavBox>
         <ItemLink to="/">Home</ItemLink>
-        <ItemLink to="/tweets">Tweets</ItemLink>
+        <ItemLink to="/tweets-page">Tweets</ItemLink>
       </NavBox>
     </ContainerHome>
   );
