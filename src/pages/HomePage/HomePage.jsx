@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainerHome, ItemLink, NavBox } from "./HomePage.styled";
+import { ContainerHome, ItemLink, NavBox, Title } from "./HomePage.styled";
 
 const HomePage = () => {
   return (
@@ -8,6 +8,7 @@ const HomePage = () => {
         <ItemLink to="/">Home</ItemLink>
         <ItemLink to="/tweets-page">Tweets</ItemLink>
       </NavBox>
+      <Title>Lorem, ipsum dolor sit amet consectetur.</Title>
     </ContainerHome>
   );
 };

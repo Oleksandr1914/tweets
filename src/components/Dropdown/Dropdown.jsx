@@ -4,12 +4,17 @@ import {
   DropdownContainer,
   DropdownBody,
   DropdownCategory,
+  Icon,
 } from "./Dropdown.styled";
+import { useDispatch } from "react-redux";
+import { dropdownChange } from "../../redux/usersSlice";
 
 const Dropdown = () => {
   const [dropdown, setDropdown] = useState(false);
   const [elementDropdown, setElementDropdown] = useState("show all");
   const arrayCategory = ["show all", "follow", "followings"];
+
+  const dispatch = useDispatch();
 
   const onDropdownHeader = () => {
     setDropdown(!dropdown);
@@ -18,12 +23,14 @@ const Dropdown = () => {
   const onDropdownCategory = (event) => {
     setElementDropdown(event.target.innerText);
     setDropdown(!dropdown);
+    dispatch(dropdownChange(event.target.innerText));
   };
 
   return (
     <DropdownContainer>
       <DropdownHeader onClick={onDropdownHeader}>
         {elementDropdown}
+        <Icon />
       </DropdownHeader>
       {dropdown && (
         <DropdownBody>

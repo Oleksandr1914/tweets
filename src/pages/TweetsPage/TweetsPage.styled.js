@@ -13,7 +13,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const Gallery = styled.div`
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
