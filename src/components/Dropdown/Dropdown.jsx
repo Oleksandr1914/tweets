@@ -12,7 +12,7 @@ import { dropdownChange } from "../../redux/usersSlice";
 const Dropdown = () => {
   const [dropdown, setDropdown] = useState(false);
   const [elementDropdown, setElementDropdown] = useState("show all");
-  const arrayCategory = ["show all", "follow", "followings"];
+  const arrayCategory = ["show all", "follow", "following"];
 
   const dispatch = useDispatch();
 

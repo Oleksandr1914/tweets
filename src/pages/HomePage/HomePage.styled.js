@@ -14,7 +14,7 @@ export const NavBox = styled.div`
   gap: 30px;
   padding: 16px 30px;
   width: 100%;
-  box-shadow: 0px 4px 12px 1px rgba(234, 175, 200, 0.66);
+  box-shadow: 0px 4px 12px 1px rgba(137, 131, 231, 0.66);
 `;
 
 export const ItemLink = styled(NavLink)`
